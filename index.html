@@ -1,24 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <title>Legal-Justice</title>
+    <link rel="stylesheet" href="syles/style.css">
+    <style>
+      .eb-garamond {
+        font-family: "EB Garamond", serif;
+      }
+    </style>
     <script>
         tailwind.config = {
         theme: {
             extend: {
             colors: {
                 clifford: '#da373d',
+                btnbg: '#B68C5A',
+                btnbg2: '#D08122',
+                btnbg3: '#C6730F',
+                gr1:'rgba(17, 17, 17, 1)',
+                gr2:'rgba(17, 17, 17, 0)'
             }
            }
          }
         }
-    </script>
+    </script> 
 </head>
-<body>
-    
+<body class="eb-garamond">
+    <header class="w-full md:w-11/12 lg:w-10/12 mx-auto p-4 md:p-0">
+        <!-- nav-section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                   <li><a>Home</a></li>
+                    <li>
+                        <details>
+                        <summary>Service</summary>
+                        <ul class="p-2">
+                            <li><a>Manual</a></li>
+                            <li><a>Machinery</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                        <summary>Cases</summary>
+                        <ul class="p-2">
+                            <li><a>Easy</a></li>
+                            <li><a>Medium</a></li>
+                            <li><a>Hard</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                        <summary>Blog</summary>
+                        <ul class="p-2">
+                            <li><a class="hover:text-red-600">You Tube</a></li>
+                            <li><a class="hover:text-blue-500">facebook</a></li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                        <summary>Contact us</summary>
+                        <ul class="p-2">
+                            <li><a class="hover:text-green-600">What's up</a></li>
+                            <li><a class="hover:text-red-700">Mobile-01781-123465</a></li>
+                        </ul>
+                        </details>
+                    </li>   
+                </ul>
+                </div>
+                <a class="text-xl"><img src="assets/images/logo2.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                    <details>
+                    <summary>Service</summary>
+                    <ul class="p-2">
+                        <li><a>Manual</a></li>
+                        <li><a>Machinery</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>Cases</summary>
+                    <ul class="p-2">
+                        <li><a>Easy</a></li>
+                        <li><a>Medium</a></li>
+                        <li><a>Hard</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>Blog</summary>
+                    <ul class="p-2">
+                        <li><a class="hover:text-red-600">You Tube</a></li>
+                        <li><a class="hover:text-blue-500">facebook</a></li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>Contact us</summary>
+                    <ul class="p-2">
+                        <li><a class="hover:text-green-600">What's up</a></li>
+                        <li><a class="hover:text-red-700">Mobile-01781-123465</a></li>
+                    </ul>
+                    </details>
+                </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-btnbg hover:bg-btnbg2 active:bg-btnbg3 ">Free Consultation</a>
+            </div>
+        </div>
+        <!-- banner-section -->
+         <section class="mt-6 md:mt-10 bg-gradient-to-b from-gr2 to-gr1 opacity-90 relative">
+                <img src="assets/images/banner.png" alt="" class="mx-auto h-full w-full object-cover absolute mix-blend-overlay">
+                <div class="hero-content text-neutral-content text-center py-32 relative">
+                    <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="mb-5 text-white text-lg">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <!-- button and input -->
+                    <div class="space-y-8 space-x-1">
+                        <input
+                            type="text"
+                            placeholder="Search Your Service"
+                            class="input border-none input-warning w-full max-w-xs" />
+                        <button class="btn bg-btnbg hover:bg-btnbg2 active:bg-btnbg3 border-none text-white font-bold text-lg px-8 ">Search</button>
+                    </div>
+                    </div>
+                </div>
+         </section>
+          <!-- with help of  css -->
+         <!-- <section class="mt-6 md:mt-10 opacity-90 py-32" style="background:linear-gradient(0.00deg, rgb(17,17,17,1 ) 3.482%,rgba(17, 17, 17, 0) 101.632%),url('/assets/images/banner.png');">
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="mb-5 text-white text-lg">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                      
+                    <div class="space-y-8 space-x-1">
+                        <input
+                            type="text"
+                            placeholder="Search Your Service"
+                            class="input border-none input-warning w-full max-w-xs" />
+                        <button class="btn bg-btnbg hover:bg-btnbg2 active:bg-btnbg3 border-none text-white font-bold text-lg px-8 ">Search</button>
+                    </div>
+                    </div>
+                </div>
+         </section> -->
+         
+         <!-- with multiple container to use the bg property several time -->
+            <!-- <section class="mt-32 bg-[url('assets/images/banner.png')] bg-cover bg-center opacity-90">
+            <div class="space-y-9 py-32 text-white bg-gradient-to-t from-gr1 to-gr2">
+                <h1 class="text-5xl text-center font-bold">Hero Heading</h1>
+                <p class="text-lg text-center font-bold w-1/2 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, consequatur. Autem placeat dolorem saepe aut natus molestiae et, possimus dolorum repellendus dolor perspiciatis ipsam exercitationem eaque doloribus minima maiores ullam?</p>
+                <button class="btn btn-primary block mx-auto">click me</button>
+            </div>
+        </section> -->
+        </header>
+        <main class="w-full md:w-11/12 lg:w-10/12 mx-auto p-4 md:p-0">
+
+        </main>
+    <footer></footer>
 </body>
 </html>
